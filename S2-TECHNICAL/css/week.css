@@ -1,0 +1,189 @@
+.body{
+    margin: 100px 100px 100px 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 200px;
+    width: 500px;
+}
+
+#button-area{
+    width: 200px;
+    padding: 10px;
+    grid-column:  1 / span  1;
+}
+
+.button{
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border: 2px solid rgb(114, 110, 110);
+}
+
+.b-hover{
+    font-size: 22px;
+    width: 163px;
+    height: 48px;
+    margin-top:6px;
+    margin-bottom:6px;
+    margin-left: -6px;
+    
+}
+
+.b-click{
+    opacity: 0.7;
+}
+
+
+#square-area{
+    width: 500px;
+    grid-column:  2 / span  1;
+    position: relative;
+}
+
+.square{
+    width: 350px;
+    height: 350px;
+    margin-top: -600px;
+    position: absolute;
+    z-index: 0;
+}
+
+@keyframes down{
+    0% {
+        margin-top: -600px;
+    }
+
+    60% {
+        margin-top: 100px;
+        background-color: white;
+    }
+
+    100%{
+        margin-top: 100px;
+        background-color: white;
+    }
+
+}
+
+@keyframes up{
+    0% {
+        margin-top: 100px;
+        background-color: white;
+    }
+
+    100%{
+        margin-top: -500px;
+        background-color: originalBackgroundColor;
+    }
+
+}
+
+
+#b-monday{
+    background-color: #ff95a5;
+}
+
+#monday-square{
+    background-color: #ff95a5;
+    border: 10px solid #ff95a5;
+    animation-name: none;
+    animation-duration: 2s; 
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 1;
+}
+
+#b-tuesday{
+    background-color: #98FF98;
+    
+}
+
+#tuesday-square{
+    background-color: #98FF98;
+    border: 10px solid #98FF98;
+    animation-name: none;
+    animation-duration: 2s; 
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+
+#b-wednesday{
+    background-color: #f7b077;
+}
+
+#wednesday-square{
+    background-color: #f7b077;
+    border: 10px solid #f7b077;
+    animation-name: none;
+    animation-duration: 2s; 
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 3;
+}
+
+#b-thursday{
+    background-color: #FFDB58;
+}
+
+#thursday-square{
+    background-color: #FFDB58;
+    border: 10px solid #FFDB58;
+    animation-name: none;
+    animation-duration: 2s; 
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 4;
+}
+
+#b-friday{
+    background-color: #9bfffa;
+}
+
+#friday-square{
+    background-color: #9bfffa;
+    border: 10px solid #9bfffa;
+    animation-name: none;
+    animation-duration: 2s; 
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 5;
+}
+
+#b-saturday{
+    background-color: #fb85ff;
+}
+
+#saturday-square{
+    background-color: #fb85ff;
+    border: 10px solid #fb85ff;
+    animation-name: none;
+    animation-duration: 2s; 
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 6;
+}
+
+#b-sunday{
+    background-color: #a48bff;
+}
+
+#sunday-square{
+    background-color: #a48bff;
+    border: 10px solid #a48bff;
+    animation-name: none;
+    animation-duration: 2s; 
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 7;
+}
