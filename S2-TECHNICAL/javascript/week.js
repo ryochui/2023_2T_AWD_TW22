@@ -21,19 +21,19 @@ buttons.forEach((button) => {
     });
 
     button.addEventListener("click", () => {
-        const squareId = button.getAttribute("data-square"); // Get the data-square attribute
-        const nextSquare = document.querySelector(`#${squareId}`); // Find the corresponding square
+        const squareId = button.getAttribute("data-square");
+        const nextSquare = document.querySelector(`#${squareId}`);
 
         if (currentSquare !== null) {
             const originalBackgroundColor = getComputedStyle(currentSquare).backgroundColor;
             currentSquare.style.setProperty('--original-bg-color', originalBackgroundColor);
-            currentSquare.style.animationName = 'up'; // Animate the current square up
+            currentSquare.style.animationName = 'up';
         }
 
         const originalBackgroundColor = getComputedStyle(nextSquare).backgroundColor;
         nextSquare.style.setProperty('--original-bg-color', originalBackgroundColor);
-        nextSquare.style.animationName = 'down'; // Animate the next square down
+        nextSquare.style.animationName = 'down';
 
-        currentSquare = nextSquare; // Update the current square to the next square
+        currentSquare = nextSquare;
     });
 });
